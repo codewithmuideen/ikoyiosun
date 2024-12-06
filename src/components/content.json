@@ -1,0 +1,31 @@
+[
+    {
+      "img": "../assets/img1.jpg",
+      "author": "LUNDEV",
+      "title": "DESIGN SLIDER",
+      "topic": "ANIMAL",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde..."
+    },
+    {
+      "img": "../assets/img2.jpg",
+      "author": "DESIGNER",
+      "title": "CREATIVE IDEAS",
+      "topic": "ART & DESIGN",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde..."
+    },
+    {
+      "img": "../assets/img3.jpg",
+      "author": "EXPERT",
+      "title": "TECHNOLOGY",
+      "topic": "INNOVATION",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde..."
+    },
+    {
+      "img": "../assets/img4.jpg",
+      "author": "VISIONARY",
+      "title": "FUTURISTIC VISION",
+      "topic": "SCIENCE & FUTURE",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde..."
+    }
+  ]
+  
