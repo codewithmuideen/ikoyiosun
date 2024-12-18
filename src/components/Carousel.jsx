@@ -2,9 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 import images from "../constants/images";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
+
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [images.img1, images.river, images.img3, images.img4];
+  const slides = [images.ikoyi1, images.ikoyi2, images.ikoyi3, images.ikoyi4];
   const carouselRef = useRef(null);
   const nextRef = useRef(null);
   const prevRef = useRef(null);
@@ -17,7 +18,7 @@ const Carousel = () => {
   useEffect(() => {
     const autoSlide = setInterval(() => {
       handleNext();
-    }, timeAutoNext); // Change slide every 7 seconds
+    }, timeAutoNext);
 
     return () => {
       clearInterval(autoSlide);
@@ -27,13 +28,13 @@ const Carousel = () => {
 
   // Navigate to next slide
   const handleNext = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length); // Wrap around to the first slide
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
     showSlider("next");
   };
 
   // Navigate to previous slide
   const handlePrev = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length); // Wrap around to the last slide
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
     showSlider("prev");
   };
 
@@ -76,18 +77,30 @@ const Carousel = () => {
             key={index}
           >
             <img src={img} alt={`Slide ${index}`} />
+            <div className="overlay"></div> {/* Overlay */}
             <div className="content">
-              <div className="author">OFFICE OF THE YOUTH LEADER</div>
+              <div className="author">OFFICE OF THE YOUTH LEADER (OLORI ODO)</div>
               <div className="title">ANCIENT IKOYI</div>
-              <div className="topic">WEBSITE</div>
               <div className="des">
               Ikoyi, Osun, is a charming ancient town known for its breathtaking mountains, tranquil rivers, and lush forest reserves. The area boasts rich biodiversity, offering a peaceful escape amidst nature. Its serene landscapes and cultural heritage make it an ideal destination for adventurers and those seeking relaxation.
               </div>
               <div className="buttons">
-                <button style={{background:'white', color:'black', fontWeight:'900'}}>SEE MORE</button>
-                <button>READ MORE</button>
+                <button
+                  style={{
+                    background: "white",
+                    color: "black",
+                    fontWeight: "600",
+                  }}
+                >
+                  SEE MORE
+                </button>
+                <button  style={{
+                    border: "2px solid white",
+                    color: "white",
+                    fontWeight: "600",
+                  }}>READ MORE</button>
               </div>
-            </div> 
+            </div>
           </div>
         ))}
       </div>
@@ -96,10 +109,8 @@ const Carousel = () => {
         {slides.map((img, index) => (
           <div className="item" key={index}>
             <img src={img} alt={`Thumbnail ${index}`} />
-            <div className="content">
-              {/* <div className="title">Name Slider</div> */}
-              {/* <div className="description">Description</div> */}
-            </div>
+            <div className="overlay"></div> {/* Overlay */}
+            <div className="content"></div>
           </div>
         ))}
       </div>
@@ -113,8 +124,6 @@ const Carousel = () => {
           <AiOutlineArrowRight />
         </button>
       </div>
-
-      <div className="time"></div>
     </div>
   );
 };
