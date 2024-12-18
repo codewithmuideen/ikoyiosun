@@ -79,7 +79,7 @@ const Carousel = () => {
             <img src={img} alt={`Slide ${index}`} />
             <div className="overlay"></div> {/* Overlay */}
             <div className="content">
-              <div className="author">OFFICE OF THE YOUTH LEADER (OLORI ODO)</div>
+              <div className="author">OFFICE OF THE YOUTH LEADER</div>
               <div className="title">ANCIENT IKOYI</div>
               <div className="des">
               Ikoyi, Osun, is a charming ancient town known for its breathtaking mountains, tranquil rivers, and lush forest reserves. The area boasts rich biodiversity, offering a peaceful escape amidst nature. Its serene landscapes and cultural heritage make it an ideal destination for adventurers and those seeking relaxation.
