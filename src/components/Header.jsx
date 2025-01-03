@@ -58,7 +58,7 @@ const Header = () => {
             </li>
           ))}
           <button className="flex items-center gap-2 bg-red-500 text-white md:ml-8 font-semibold px-5 py-5 rounded-full duration-500 md:static">
-            Let's Talk <AiOutlineArrowRight className="w-4 h-4" />
+            CONNECCT <AiOutlineArrowRight className="w-4 h-4" />
           </button>
         </ul>
       </div>
